@@ -1,0 +1,57 @@
+{
+  "name": "xml-to-json-promise",
+  "version": "0.0.1",
+  "description": "Convert an XML file or XML data to JSON (via xml2js), with promises.",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava --verbose && nyc ava",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radiovisual/xml-to-json-promise"
+  },
+  "keywords": [
+    "xml",
+    "json",
+    "node",
+    "convert",
+    "change",
+    "parse",
+    "transform",
+    "read",
+    "write",
+    "raw",
+    "data",
+    "file"
+  ],
+  "author": {
+    "name": "Michael Wuergler",
+    "email": "senjudev@gmail.com",
+    "url": "http://numetriclabs.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radiovisual/xml-to-json-promise/issues"
+  },
+  "homepage": "https://github.com/radiovisual/xml-to-json-promise/issues",
+  "dependencies": {
+    "native-promise-only": "^0.8.1",
+    "object-assign": "^4.0.1",
+    "pify": "^2.3.0",
+    "pinkie-promise": "^2.0.0",
+    "xml2js": "~0.4.16"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "blue-tape": "^0.2.0",
+    "coveralls": "^2.11.6",
+    "nyc": "^5.6.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1",
+    "xo": "*"
+  }
+}
