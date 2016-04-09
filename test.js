@@ -44,21 +44,3 @@ test('xmlDataToJSON rejects on error', async t => {
 	t.throws(convert.xmlDataToJSON('no json to parse'), /Non-whitespace before first tag/igm);
 });
 
-//  test('should convert raw xml data to json', t => {
-//	convert.xmlDataToJSON(xmlSample, false).then(json => {
-//		t.is(typeof json, 'object');
-//		t.is(json.body, 'Remember to write unit tests!');
-//	});
-//  });
-//
-//  test('xmlFileToJSON should allow xml2js options', t => {
-//	convert.xmlFileToJSON('./fixtures/sample.xml', false, ).then(data => {
-//		t.is(data, {});
-//	});
-//  });
-//
-//  test('xmlDataToJSON should allow xml2js options', t => {
-//	convert.xmlDataToJSON(xmlSample, false, {charkey: '#'}).then(data => {
-//		t.is(data, {});
-//	});
-//  });
