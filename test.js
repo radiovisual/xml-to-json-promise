@@ -33,7 +33,7 @@ test('xmlDataToJSON should allow xml2js options', t => {
 });
 
 test('xmlFileToJSON rejects on error', async t => {
-	t.throws(convert.xmlFileToJSON('does-not-exist.xml'), /no such file or directory/igm);
+	t.throws(convert.xmlFileToJSON('does-not-exist.xml'), /no such file or directory|ENOENT/igm);
 });
 
 test('xmlFileToJSON rejects on parse error', async t => {
