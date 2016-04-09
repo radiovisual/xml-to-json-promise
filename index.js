@@ -10,7 +10,7 @@ require('native-promise-only');
 
 function xmlFileToJSON(filePath, xml2JsOptions) {
 	xml2JsOptions = objectAssign({}, xml2JsOptions);
-	return new Promise((resolve, reject) => {
+	return new Promise(function (resolve, reject) {
 		fs.readFile(path.resolve(filePath), 'utf8', function (err, data) {
 			if (err) {
 				reject(err);
