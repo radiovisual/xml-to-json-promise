@@ -94,4 +94,4 @@ This is a wrapper around the [xml2js](https://github.com/Leonidas-from-XIV/node-
   
 ## License
 
-MIT [@chilijung](http://github.com/chilijung)
+MIT @ [Michael Wuergler](http://numetriclabs.com)
