@@ -26,7 +26,12 @@
     "write",
     "raw",
     "data",
-    "file"
+    "file",
+    "wrapper",
+    "promise",
+    "xml2js",
+    "JSON",
+    "XML"
   ],
   "author": {
     "name": "Michael Wuergler",
