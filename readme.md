@@ -14,6 +14,7 @@ makes it easy to convert XML files, as well as raw XML data to the JSON format.
 npm install --save xml-to-json-promise
 ```
 
+
 ## Usage
 
 ```js
@@ -66,11 +67,30 @@ Type: `object`
 
 The [xml2js options](https://github.com/Leonidas-from-XIV/node-xml2js#options) you want to use when parsing the JSON.
 
+
+## Saving a JSON file
+
+Here is a recipe for saving your JSON to a file using xml-to-json-promise:
+
+```js
+var convert = require('xml-to-json-promise');
+var fs = require('fs');
+
+convert.xmlDataToJSON('<example>data</example>').then(json => {
+	fs.writeFile('file.json', JSON.stringify(json), err => {
+		if (err) { throw err };
+		console.log('file saved!');
+	});
+});
+```
+
+
 ## Notes
 
 This is a wrapper around the [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js) library, so please direct any issues/bugs
  regarding the parsing/handling of your JSON data directly to [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js). Otherwise,
  feel free to open any issues if you discover a problem with this module. 
+  
   
 ## License
 
