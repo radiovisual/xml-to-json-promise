@@ -1,6 +1,6 @@
 {
   "name": "xml-to-json-promise",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert an XML file or XML data to JSON (via xml2js), with promises.",
   "main": "index.js",
   "scripts": {
