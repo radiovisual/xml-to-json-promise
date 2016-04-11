@@ -46,7 +46,6 @@
   "dependencies": {
     "native-promise-only": "^0.8.1",
     "object-assign": "^4.0.1",
-    "pify": "^2.3.0",
     "xml2js": "~0.4.16"
   },
   "devDependencies": {
